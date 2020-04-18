@@ -2,11 +2,11 @@
 
 This is a Docker configuration for creating Docker containers with Node and Chrome for testing on local environments and CI tools (Gitlab-ci, Jenkins, Tavis-ci, Githab actions...).
 
-The `Dockerfile` uses a Alpine based image with specific version of Node and install Chrome and its minimal dependencies, so it can be used for web apps' testing. With frameworks like Karma.
+The `Dockerfile` uses an Alpine based image with specific version of Node and install Chrome and its minimal dependencies, so it can be used for web apps' testing. With frameworks like Karma.
 
 ## Versions
 
-Right now there are 3 Docker images already built and availables at [juane/node-chrome](https://hub.docker.com/r/juanje/node-chrome):
+Right now there are 3 Docker images already built and available at [juanje/node-chrome](https://hub.docker.com/r/juanje/node-chrome):
 
 * **10.18-alpine** (with Node version 10.18)
 * **12.13.0-alpine** (with Node version 12.13.0)
@@ -25,7 +25,7 @@ $ docker pull juanje/node-chrome:10.18-alpine
 
 ## Usage
 
-The containers will run the command `node` as user **node** by default. It's always good idea to run yours contaniners as non-root user.
+The containers will run the command `node` as user **node** by default. It's always good idea to run yours containers as non-root user.
 
 You can use it in a CI tool (the main use for this image) or for local testing. If you want to test your local code against a specific version of Node, this can help:
 ```
